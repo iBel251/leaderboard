@@ -1,3 +1,89 @@
+html {
+  padding: 0;
+}
+
 body {
-  background-color: gray;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+input {
+  border: 2px solid black;
+}
+
+button {
+  width: fit-content;
+  padding: 5px;
+  box-shadow: 2px 2px 2px gray;
+  background-color: white;
+}
+
+.window {
+  width: fit-content;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+}
+
+.left-sec {
+  margin: 10px 20px;
+}
+
+.left-sec div {
+  display: flex;
+}
+
+.left-sec button {
+  margin-left: 20px;
+}
+
+.left-sec ul {
+  border: 2px solid black;
+  padding: 0;
+}
+
+.left-sec li p {
+  margin: 5px;
+}
+
+.left-sec li:nth-child(even) {
+  background-color: rgb(228, 228, 228);
+}
+
+.right-sec {
+  margin: 10px 20px;
+}
+
+.right-sec * {
+  margin-bottom: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form button {
+  margin-right: 0;
+  margin-left: auto;
 }
