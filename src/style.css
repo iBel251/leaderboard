@@ -1,12 +1,15 @@
 html {
   padding: 0;
+  height: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  height: 100vh;
+  height: 100%;
+  border: 25px solid antiquewhite;
+  overflow: hidden;
 }
 
 li {
@@ -15,10 +18,13 @@ li {
 
 h1 {
   margin: 0;
+  background-color: bisque;
+  text-align: center;
 }
 
 h2 {
   margin: 0;
+  font-style: italic;
 }
 
 input {
@@ -29,7 +35,15 @@ button {
   width: fit-content;
   padding: 5px;
   box-shadow: 2px 2px 2px gray;
-  background-color: white;
+  background-color: rgb(54, 54, 226);
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: aqua;
+  color: black;
 }
 
 .window {
@@ -43,10 +57,13 @@ button {
 
 .container {
   display: flex;
+  background-color: antiquewhite;
 }
 
 .left-sec {
   margin: 10px 20px;
+  border-right: 1px solid black;
+  padding-right: 40px;
 }
 
 .left-sec div {
@@ -64,6 +81,7 @@ button {
 
 .left-sec li p {
   margin: 0;
+  font-weight: 700;
 }
 
 .left-sec li {
@@ -71,7 +89,7 @@ button {
 }
 
 .left-sec li:nth-child(even) {
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(254, 218, 170);
 }
 
 .right-sec {
