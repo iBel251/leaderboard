@@ -7,32 +7,34 @@
     <title>Document</title>
 <script defer src="bundle.js"></script></head>
 <body>
-    <div class="header">
-        <h1>Leaderboard</h1>
-    </div>
-    <div class="container">
-        <div class="left-sec">
-            <div>
-                <h2>Resent scores</h2>
-                <button class="refresh-btn">Refresh</button>
-            </div>
-            <ul>
-                <li>Name: 100</li>
-                <li>Name: 20</li>
-                <li>Name: 50</li>
-                <li>Name: 78</li>
-                <li>Name: 12.5</li>
-                <li>Name: 77</li>
-                <li>Name: 42</li>
-            </ul>
+    <div class="window">
+        <div class="header">
+            <h1>Leaderboard</h1>
         </div>
-        <div class="right-sec">
-            <h2>Add your score</h2>
-            <form action="" class="form">
-                <input type="text" id="name" name="name" placeholder="Your name" required>
-                <input type="number" id="score" name="score" placeholder="Your SCORE" required>
-                <button type="submit">Submit</button>
-            </form>
+        <div class="container">
+            <div class="left-sec">
+                <div>
+                    <h2>Resent scores</h2>
+                    <button type="button" class="refresh-btn">Refresh</button>
+                </div>
+                <ul>
+                    <li><p>Name: 100</p></li>
+                    <li><p>Name: 20</p></li>
+                    <li><p>Name: 50</p></li>
+                    <li><p>Name: 78</p></li>
+                    <li><p>Name: 12.5</p></li>
+                    <li><p>Name: 77</p></li>
+                    <li><p>Name: 42</p></li>
+                </ul>
+            </div>
+            <div class="right-sec">
+                <h2>Add your score</h2>
+                <form action="submit" class="form">
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                    <input type="number" id="score" name="score" placeholder="Your SCORE" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
 </body>
