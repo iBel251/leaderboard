@@ -116,7 +116,27 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_refresh__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/refresh */ \"./src/modules/refresh.js\");\n/* harmony import */ var _modules_submit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/submit */ \"./src/modules/submit.js\");\n\n\n\n\nconst api_url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Oawl0gMZlyz9hcMNVFUB/scores';\n\n\n\n\nasync function createGame() {\n  await fetch(api_url, {\n    method: 'POST',\n    body: JSON.stringify({ name: 'My new game'}),\n    headers: {\n      'Content-Type': 'application/json'\n    }\n  })\n}\naddISS(api_url,'im',1);\n\nconsole.log((0,_modules_refresh__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(api_url));\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/refresh.js":
+/*!********************************!*\
+  !*** ./src/modules/refresh.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ getData)\n/* harmony export */ });\nasync function getData(url) {\r\n    const response = await fetch(url, {\r\n      method: 'GET',\r\n    })\r\n    .then((response) => response.json())\r\n    .then((data) => {\r\n        return data;\r\n    })\r\n  }\n\n//# sourceURL=webpack://leaderboard/./src/modules/refresh.js?");
+
+/***/ }),
+
+/***/ "./src/modules/submit.js":
+/*!*******************************!*\
+  !*** ./src/modules/submit.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ submitData)\n/* harmony export */ });\nasync function submitData(url,uName, uScore) {\r\n    await fetch(url, {\r\n      method: 'POST',\r\n      body: JSON.stringify({user:uName,score:uScore}),\r\n      headers: {\r\n        'Content-Type': 'application/json'\r\n      }\r\n    })\r\n    .then((replay) => replay.json());\r\n    console.log('helllooo')\r\n  }\n\n//# sourceURL=webpack://leaderboard/./src/modules/submit.js?");
 
 /***/ })
 

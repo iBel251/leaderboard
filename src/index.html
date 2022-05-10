@@ -15,16 +15,10 @@
             <div class="left-sec">
                 <div>
                     <h2>Resent scores</h2>
-                    <button type="button" class="refresh-btn">Refresh</button>
+                    <button type="button" class="refresh-btn" id="refresh">Refresh</button>
                 </div>
-                <ul>
-                    <li><p>Name: 100</p></li>
-                    <li><p>Name: 20</p></li>
-                    <li><p>Name: 50</p></li>
-                    <li><p>Name: 78</p></li>
-                    <li><p>Name: 12.5</p></li>
-                    <li><p>Name: 77</p></li>
-                    <li><p>Name: 42</p></li>
+                <ul class="score-container">
+                    
                 </ul>
             </div>
             <div class="right-sec">
@@ -32,7 +26,7 @@
                 <form action="submit" class="form">
                     <input type="text" id="name" name="name" placeholder="Your name" required>
                     <input type="number" id="score" name="score" placeholder="Your SCORE" required>
-                    <button type="submit">Submit</button>
+                    <button type="button" id="submit">Submit</button>
                 </form>
             </div>
         </div>
