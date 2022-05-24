@@ -71,7 +71,7 @@ Please find the link in the Live Demo section.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/mavericks-db/awesome-books-ES6/issues).
+Feel free to check the [issues page](https://github.com/iBel251/leaderboard/issues).
 
 ## Show your support
 
